@@ -1,0 +1,418 @@
+body {
+    background: url('picture/1191420.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Arrange les formulaires côte à côte */
+    margin-top: 20px; 
+}
+
+.title {
+    font-size: 98px;
+    margin-bottom: 20px;
+    color: white;
+    align-items: center;
+    font-family: 'VT323', sans-serif;
+    text-transform: uppercase;
+}
+
+.login,.inscription,.profile_user,.missions_dispo,.missions_player{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 700px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure blanche semi-transparente */
+    text-align: center;
+    
+} 
+
+.form-title {
+    font-family: 'VT323', sans-serif;
+    font-size: 52px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.element{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: padding 1.2s;
+    padding: 0px 30px;
+}
+.element :hover{
+    padding: 20px 30px;
+}
+.input-field {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid white;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.548);
+    font-size: 28px;
+    margin-top: 0px;
+
+}
+
+.action-button {
+    background-color: #48007b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 26px;
+    transition: background-color 0.3s;
+    transition: padding 1.3s;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.action-button:hover {
+    background-color: #a20fe6c7;
+    border-radius: 20px;
+    padding: 10px 120px;
+}
+
+
+.action-button2 {
+    background-color: #552583;
+    color: white;
+    border: none;
+    
+    padding: 10px 20px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 56px;
+    transition: background-color 0.3s;
+    transition: padding 1.3s;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    
+}
+.action-button2:hover {
+    background-color: #a20fe6c7;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('picture/1191420.jpg');
+  background-size:cover;
+        -webkit-animation: slidein 60s;
+        animation: slidein 60s;
+
+        -webkit-animation-fill-mode: alternate;
+        animation-fill-mode: alternate;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+/* 
+body.Home{
+    background-image: url('picture/menuspacemerchant.jpg');
+}
+
+body.Storeship{
+    background-image: url('picture/storeship.jpeg');
+} */
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+/* Version 1 page d'Home */
+body.Home .navbar {
+    font-family: 'VT323', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+body.Home ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    font-family: 'VT323', sans-serif;
+}
+
+body.Home li a {
+    font-family: 'VT323', sans-serif;
+    display: block;
+    background-color: #3333337a;
+    color: white;
+    font-size: 1.5em;
+    border-inline: ridge;
+    border-color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 24px 150px;
+    text-decoration: none;
+    transition: border 0.4s;
+}
+body.Home li a:hover {
+    background-color: #111111;
+}
+
+body.Home .active {
+    background-color: #48007b;
+}
+/* Version 2 (Autres pages) */
+body.missions .navbar,
+body.flotte .navbar,
+body.crew .navbar,
+body.profile .navbar {
+    font-family: 'VT323', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+body.missions ul,
+body.flotte ul,
+body.crew ul,
+body.profile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3333337a;
+}
+
+body.missions li,
+body.flotte li,
+body.crew li,
+body.profile li {
+    float: left;
+}
+
+body.missions li a,
+body.flotte li a,
+body.crew li a,
+body.profile li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 36px;
+    text-decoration: none;
+}
+body.missions li a:hover,
+body.flotte li a:hover,
+body.crew li a:hover,
+body.profile li a:hover {
+    background-color: #111111;
+}
+
+body.missions .active,
+body.flotte .active,
+body.crew .active,
+body.profile .active {
+    background-color: #48007b;
+}
+
+/* Styles pour le tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+/* Styles pour les cellules d'en-tête du tableau */
+th {
+    background-color: #48007b; /* Couleur de fond pour les cellules d'en-tête */
+    color: white;
+    text-align: left;
+    font-size: 100px;
+    font-family: 'Oswald', sans-serif; /* Police de caractères galactique */
+}
+
+/* Styles pour les cellules du tableau */
+td {
+    background-color: #11111100; /* Couleur de fond pour les cellules */
+    color: white;
+    padding: 15px 10px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif; /* Police de caractères galactique */
+    border-bottom: 2px solid #48007b; /* Bordure basse de chaque cellule */
+    text-transform: uppercase;
+}
+
+/* Styles pour les lignes impaires du tableau */
+tr:nth-child(odd) {
+    background-color: #222222; /* Couleur de fond pour les lignes impaires */
+}
+/* Styles pour les lignes impaires du tableau */
+tr:nth-child(even) {
+    background-color: rgba(251, 249, 244, 0.253); /* Couleur de fond pour les lignes impaires */
+}
+/* Styles pour les cellules du tableau au survol de la souris */
+td:hover {
+    background-color: #333333; /* Couleur de fond au survol de la souris */
+}
+
+
+.selection {
+    font-size: 30px;
+    display: flex; /* Utiliser la disposition flexbox */
+    flex-direction: column; /* Aligner les éléments verticalement */
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: space-between; /* Espacer les éléments également dans l'espace vertical */
+    height: 200px; /* Hauteur fixe pour l'espace entre le titre et le bouton */
+    margin-bottom: 20px; /* Espace en bas de la div .selection */
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.6); /* Couleur de fond noire semi-transparente */
+    padding: 10px 100px;
+    border-radius: 20px;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Bordure blanche semi-transparente */
+    text-align: center;
+}
+.form select, .form input {
+    font-family: 'VT323', sans-serif;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Couleur de fond noire semi-transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Style pour le message d'erreur */
+.error-message {
+    color: #ff3333;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif; /* Police de caractères galactique */
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.sucess-message{
+    color: #008000;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif; /* Police de caractères galactique */
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#shipDetails {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+/* Affiche les détails du vaisseau au survol de l'option */
+#shipSelect:hover + #shipDetails,
+.ship-detail:hover {
+    display: block;
+}
+
+/* Positionne les détails du vaisseau à côté du menu déroulant */
+#shipSelect:hover + #shipDetails {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.marquee {
+   font-family: sans-serif, 'Press Start 2P';
+   text-transform: uppercase;
+   font-size: 42px;
+   font-weight: bold;
+   background: #48007bc0;
+   padding: .6em 0;
+   color: #a20fe6c7;
+   box-shadow: 2px 2px 10px #48007b;
+   overflow: hidden;
+   position: relative;
+   animation: text-line-glow 2s linear infinite;
+}
+@keyframes text-line-glow {
+0% {text-shadow: 0px 0px 0px #a20fe6c7;
+   }
+50% {text-shadow: 0px 0px 4px #a20fe6c7;
+   }
+}
+.marquee:before {
+   content: '';
+   position: absolute;
+   display: block;
+   background-image: 
+    repeating-linear-gradient(0deg, #23277600, #23277600 1px, #040a2444 1px, #040a2444 3px),
+    repeating-linear-gradient(90deg, #23277600, #23277600 2px, #040a2444 2px, #040a2444 3px);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.marquee:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    animation: line-glow 3.5s linear infinite;
+   animation-timing-function: steps(100000);
+    }
+@keyframes line-glow {
+0% {
+   right: -2%;
+   background-color: #a20fe6c7;
+   box-shadow: 0 0 20px #ffd2fe00;
+   }
+50% {
+   right: 102%;
+   background-color: #a20fe6c7;
+   box-shadow: 0 0 30px #ffd2feff;
+    }
+   }

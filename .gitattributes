@@ -1,1 +1,2 @@
 *.php linguist-language=HTML+PHP
+*.sql linguist-detectable=true
